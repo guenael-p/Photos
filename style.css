@@ -34,8 +34,8 @@ body{
 
 
 .test{
-    width: 110px;
-    height: 110px;
+    width: 100px;
+    height: 100px;
     overflow: hidden;
     position: relative;
     cursor: pointer;
@@ -155,3 +155,4 @@ body{
 #container{
     -webkit-overflow-scrolling: touch;
 }
+
