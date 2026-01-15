@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link rel="stylesheet" href="style.css"/> 
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
+</head>
+<body>
+    <div id="container">
+
+    <!-- PERSONNE A -->
+    <section class="person" data-person="A">
+         <div class="controls">
+        <div class="add" onclick="openFile('A')"></div>
+        <input 
+            type="color"
+            class="colorPicker"
+            onchange="changeColor('A', this.value)">
+            </div>
+            <button 
+            class="export"
+            onclick="exportPerson('A')"
+        >⤓</button>
+        <button class="action" onclick="moveImage('A', -1)">←</button>
+<button class="action" onclick="moveImage('A', 1)">→</button>
+<button class="action danger" onclick="deleteImage('A')">🗑</button>
+
+        <div class="boxes" id="boxesA"></div>
+    </section>
+
+    <!-- PERSONNE B -->
+    <section class="person" data-person="B">
+        <div class="controls">
+        <div class="add" onclick="openFile('B')"></div>
+        <input 
+            type="color"
+            class="colorPicker"
+            onchange="changeColor('B', this.value)"
+        ></div>
+        <button 
+            class="export"
+            onclick="exportPerson('B')"
+        >⤓</button>
+        <button class="action" onclick="moveImage('B', -1)">←</button>
+<button class="action" onclick="moveImage('B', 1)">→</button>
+<button class="action danger" onclick="deleteImage('B')">🗑</button>
+
+        <div class="boxes" id="boxesB"></div>
+    </section>
+
+    <input 
+    type="file" 
+    id="fileInput"
+    accept="image/*"
+    multiple
+    style="display:none"
+    onchange="addImage(this)"
+>
+
+</body>
+</html>
