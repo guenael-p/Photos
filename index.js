@@ -4,7 +4,7 @@
 
 let currentPerson = null;
 
-const MAX_PHOTOS = 12;
+const MAX_PHOTOS = 16;
 
 const photoCount = {
     A: 0,
@@ -156,3 +156,4 @@ function exportPerson(person) {
         section.classList.remove('exporting');
     });
 }
+
