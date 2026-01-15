@@ -1,11 +1,18 @@
 body{
     background: rgb(27, 27, 27);
 }
+#container{
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
 .person{
     flex: 1;
     position: relative;
     padding: 15px;
     overflow-y: auto;
+    height: 100vh;
+    scroll-snap-align: start;
 }
 .person[data-person="A"]{
     background: rgb(27, 27, 27);
@@ -27,8 +34,8 @@ body{
 
 
 .test{
-    width: 90px;
-    height: 90px;
+    width: 110px;
+    height: 110px;
     overflow: hidden;
     position: relative;
     cursor: pointer;
@@ -37,6 +44,8 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    image-rendering: auto;
+    -webkit-font-smoothing: antialiased;
 }
 .add{
   position: absolute;

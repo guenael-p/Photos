@@ -145,7 +145,7 @@ function exportPerson(person) {
     section.classList.add('exporting');
 
     html2canvas(section, {
-        scale: 2
+        scale: window.devicePixelRatio || 2
     }).then(canvas => {
 
         const link = document.createElement('a');
