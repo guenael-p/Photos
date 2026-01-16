@@ -4,7 +4,7 @@
 
 let currentPerson = null;
 
-const MAX_PHOTOS = 12;
+const MAX_PHOTOS = 16;
 
 const photoCount = {
     A: 0,
@@ -180,3 +180,4 @@ document.getElementById('enter').addEventListener('click', () => {
         garde.remove();
     }, 1000);
 });
+
