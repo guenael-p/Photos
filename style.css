@@ -39,8 +39,8 @@ body{
 
 
 .test{
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     border-radius: 12px;
     overflow: hidden;
     position: relative;
@@ -241,6 +241,7 @@ body{
         transform: translateY(10px);
     }
 }
+
 
 
 
