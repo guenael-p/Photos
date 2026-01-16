@@ -1,8 +1,8 @@
 body{
     background: radial-gradient(
         circle at top,
-        #0f0f0f,
-        #2a2a2a
+        #2a2a2a,
+        #0f0f0f
         
     );
 }
@@ -228,3 +228,4 @@ body{
         transform: translateY(10px);
     }
 }
+
