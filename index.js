@@ -4,7 +4,7 @@
 
 let currentPerson = null;
 
-const MAX_PHOTOS = 16;
+const MAX_PHOTOS = 12;
 
 const photoCount = {
     A: 0,
@@ -157,3 +157,26 @@ function exportPerson(person) {
     });
 }
 
+
+/* =====================
+   PAGE DE GARDE
+===================== */
+
+// test de slide de ma page de garde //
+// function slide(){
+//     const Jeff = document.getElementById("slide");
+//     Jeff.addEventListener('click', function() {
+//         document.getElementById('Garde').style.display = 'none';
+//         console.log('slide--');
+//     }
+// )
+// }
+
+document.getElementById('enter').addEventListener('click', () => {
+    const garde = document.getElementById('garde');
+    garde.classList.add('exit');
+
+    setTimeout(() => {
+        garde.remove();
+    }, 1000);
+});
