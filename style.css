@@ -31,7 +31,8 @@ body{
     background: rgb(27, 27, 27);
 }
 .boxes{
- display: flex;
+    margin-top:15px;
+    display: flex;
     flex-wrap: wrap;
     gap: 16px;
     justify-content: center;
@@ -242,6 +243,7 @@ body{
         transform: translateY(10px);
     }
 }
+
 
 
 
